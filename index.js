@@ -9,7 +9,7 @@
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
 const A187 = '👾UwiwBot👾'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/Uwiw_Bocah.ig'; // JANGAN UBAH-UBAH INFO!!!
+const instagram = 'https://instagram.com/Uwiw_Bocah'; // JANGAN UBAH-UBAH INFO!!!
 const nomer = 'Wa.me/+6285815655726'; // JANGAN UBAH-UBAH INFO!!!
 const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!
 const groupwhatsapp = 'https://chat.whatsapp.com/D5U6a2bvurWCrVk6R925a6'; // JANGAN UBAH-UBAH INFO!!!
