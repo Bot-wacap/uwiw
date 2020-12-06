@@ -83,7 +83,7 @@ conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @Uwiw_Bocah.ig`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @Uwiw_Bocah`)
 })
 
 conn.on('message-new', async(m) =>
