@@ -8,12 +8,12 @@
 * ARIS187 ID
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
-const A187 = '👾AR15BOT👾'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/_sadboy.ig'; // JANGAN UBAH-UBAH INFO!!!
-const nomer = 'Wa.me/+6285722553839'; // JANGAN UBAH-UBAH INFO!!!
+const A187 = '👾UW1WB0T👾'; // JANGAN UBAH-UBAH INFO!!!
+const instagram = 'https://instagram.com/Uwiw_Bocah'; // JANGAN UBAH-UBAH INFO!!!
+const nomer = 'Wa.me/+6285813655726'; // JANGAN UBAH-UBAH INFO!!!
 const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!
-const groupwhatsapp = 'https://chat.whatsapp.com/GU6NsgZvfgw37vrjIxUPhP'; // JANGAN UBAH-UBAH INFO!!!
-const youtube = 'https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg'; // JANGAN UBAH-UBAH INFO!!!
+const groupwhatsapp = 'https://chat.whatsapp.com/D5U6a2bvurWCrVk6R925a6'; // JANGAN UBAH-UBAH INFO!!!
+const youtube = 'BELUM BUAT'; // JANGAN UBAH-UBAH INFO!!!
 //A187ID
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -29,9 +29,9 @@ const aris = require("./lib/aris.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 const aris1 = require("./lib/aris1.js");
-const aris2 = require("./lib/aris2.js");
-const aris3 = require("./lib/aris3.js");
-const aris4 = require("./lib/aris4.js");
+
+
+
 const readTextInImage = require('./lib/ocr')
 //A187ID
 const
@@ -64,7 +64,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] AR15BOT ready scan now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] UW1WBOT ready scan now!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -83,7 +83,7 @@ conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @Uwiw_Bocah`)
 })
 
 conn.on('message-new', async(m) =>
@@ -151,21 +151,21 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, ' *Owner AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Owner UW1WB0CAH wa.me/+6285813655726* ' ,MessageType.text);
 }
 else if (text == '#help'){
 conn.sendMessage(id, ' *Menampilkan Pilihan Menu!!!* ' ,MessageType.text);
 }
-else if (text == '#menu1'){
-conn.sendMessage(id, ' *Menampilkan Fitur Menu1!!!* ' ,MessageType.text);
+else if (text == '#menu'){
+conn.sendMessage(id, ' *Menampilkan Fitur Menu!!!* ' ,MessageType.text);
 }
-else if (text == '#menu2'){
+else if (text == ''){
 conn.sendMessage(id, ' *Menampilkan Fitur Menu2!!!* ' ,MessageType.text);
 }
-else if (text == '#menu3'){
+else if (text == ''){
 conn.sendMessage(id, ' *Menampilkan Fitur Menu3!!!* ' ,MessageType.text);
 }
-else if (text == '#menu4'){
+else if (text == ''){
 conn.sendMessage(id, ' *Menampilkan Fitur Menu4!!!* ' ,MessageType.text);
 }
 else if (text == '#info'){
@@ -175,7 +175,7 @@ else if (text == '#donasi'){
 conn.sendMessage(id, ' *Menampilkan Donasi!!!* ' ,MessageType.text);
 }
 else if (text == '#creator'){
-conn.sendMessage(id, ' *Creator AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Creator UW1WB0CAH wa.me/+6285722553839* ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
 conn.sendMessage(id, ' _Pagi juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#help* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
@@ -595,7 +595,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, aris.aris(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
-if (text == '#menu1'){
+if (text == '#menu'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -632,7 +632,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, aris1.aris1(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
-if (text == '#menu2'){
+if (text == ''){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -669,7 +669,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, aris2.aris2(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
-if (text == '#menu3'){
+if (text == ''){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -706,7 +706,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, aris3.aris3(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
 }
-if (text == '#menu4'){
+if (text == ''){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
 var date = new Date();
 var tahun = date.getFullYear();
@@ -932,22 +932,22 @@ else if (text == '!foto'){
 conn.sendMessage(id, 'kirim !foto cewek/cowok\n\nContoh: !foto cewek' ,MessageType.text);
 }
 else if (text == '#help'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾UW1WB0T👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_Uwiw_Bocah_' ,MessageType.text);
 }
-else if (text == '#menu1'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+else if (text == ''){
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾UW1WB0T👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_Uwiw_Bocah_' ,MessageType.text);
 }
 else if (text == '#menu'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾UW1WB0T👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_Uwiw_Bocah_' ,MessageType.text);
 }
-else if (text == '#menu2'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+else if (text == ''){
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾UW1WBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_Uwiw_Bocah_' ,MessageType.text);
 }
-else if (text == '#menu3'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+else if (text == ''){
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾UW1WB0T👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_Uwiw_Bocah_' ,MessageType.text);
 }
-else if (text == '#menu4'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾AR15BOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_sadboy.ig_' ,MessageType.text);
+else if (text == ''){
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾UW1WB0T👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/_Uwiw_Bocah_' ,MessageType.text);
 }
    if (messageType == 'imageMessage')
    {
